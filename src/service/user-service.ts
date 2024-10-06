@@ -2,7 +2,7 @@ import {CreateUserRequest, toUserResponse, UserResppone} from "../model/user-mod
 import {Validation} from "../validation/validation";
 import {UserValidation} from "../validation/user-validation";
 import {prismaClient} from "../application/database";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import {ResponseError} from "../error/response-error";
 
 export class UserService{
